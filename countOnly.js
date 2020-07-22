@@ -25,47 +25,12 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-/*
-
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const countOnly = function(allItems, itemsToCount) {
-  const objCounter = {};
-  for (let item of allItems) {
-    if(objCounter[item] === undefined) {
-      objCounter[item] = 1
-    } else {
-      objCounter[item]++
-    }
-  }
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
-
-console.log()
-/*
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-
-*/
-
-
 
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
-  for(const item of allItems){
-    if(itemsToCount[item]) {
+  for (const item of allItems) {
+    if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
       } else {
@@ -75,7 +40,7 @@ const countOnly = function(allItems, itemsToCount) {
   }
     
   return results;
-}
+};
 
 const firstNames = [
   "Karl",
