@@ -1,8 +1,9 @@
 
 const tail = function(words) {
-  return words.slice(1);
+  let newArr = words;
+  newArr.splice(0,1);
+  return newArr;
 };
 
 module.exports = tail;
-
 
