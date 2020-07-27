@@ -15,12 +15,12 @@ const eqArrays = function(array1, array2) {
       if (array1[i] === array2[i]) {
         counter++;
       }
-    }   
+    }
     if (counter === array1.length) {
-      return true;  
+      return true;
     } else {
       return false;
-    } 
+    }
   } else {
     return false;
   }
@@ -29,7 +29,7 @@ const eqArrays = function(array1, array2) {
 
 
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
@@ -52,3 +52,4 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 
 
+module.exports = findKeyByValue;
