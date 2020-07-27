@@ -5,9 +5,9 @@ const eqArrays = function(array1, array2) {
       if (array1[i] === array2[i]) {
         counter++;
       }
-    }
+    }   
     if (counter === array1.length) {
-      return true;
+      return true;  
     } else {
       return false;
     }
@@ -17,7 +17,7 @@ const eqArrays = function(array1, array2) {
 };
 
 const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
+  if (eqArrays (actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
@@ -43,3 +43,5 @@ assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 assertArraysEqual(results2, [ false, false, true, false, true ]);
 assertArraysEqual(results3,[ true, true, false, true, true ]);
 assertArraysEqual(results4,[ 'r', 'o', 'o', 'a', 'o' ]);
+
+module.exports = map;
