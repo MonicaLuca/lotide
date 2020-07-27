@@ -70,3 +70,5 @@ assertEqualObject(letterPositions(sentence), { h: [ 0 ],
   w: [ 5 ],
   r: [ 7 ],
   d: [ 9 ] });
+
+  module.exports = letterPositions;
